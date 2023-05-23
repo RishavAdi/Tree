@@ -1,0 +1,13 @@
+node*buildTree(int data){
+if(data==-1)return;
+node*root=new node(data);
+int leftdata;
+cout<<"enter the left data";
+cin>>leftdata;
+root->left=buildTree(leftdata);
+int rightdata;
+cout<<"Enter the right data";
+cin>>rightdata;
+root->right=buildTree(rightdata);
+return root;
+}
