@@ -1,6 +1,6 @@
-node*buildTree(int data){
-if(data==-1)return;
-node*root=new node(data);
+Node*buildTree(int data){
+if(data==-1)return NULL;
+Node*root=new Node(data);
 int leftdata;
 cout<<"enter the left data";
 cin>>leftdata;
